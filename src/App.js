@@ -18,6 +18,7 @@ import Dessert from './pages/Dessert';
 import Plats from './pages/Plats';
 import Entrée from './pages/Entrée';
 import AddRecipe from './pages/AddRecipe';
+import Recipe from './components/Recipe';
 
 const router = createBrowserRouter([
   {
@@ -45,8 +46,12 @@ const router = createBrowserRouter([
         element: <Entrée />,
       },
       {
-        path: 'AjoutDesRecettes',
+        path: 'Ajout-des-recettes',
         element: <AddRecipe />,
+      },
+      {
+        path: 'Recipe',
+        element: <Recipe />,
       }
     ],
   },

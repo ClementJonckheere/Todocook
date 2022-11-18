@@ -2,33 +2,34 @@ import Recipe from '../components/Recipe';
 import { auth, db } from '../config/firebaseConfig';
 import { collection, getDocs} from "firebase/firestore";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const DashboardComp = () => {
     const [recipes,setRecipes] = useState([])
-    const [count, setCount] = useState(0);
-    const [recettes, setRecettes] = useState([]);
         useEffect(() => {
-            const recetteRef = collection(db, 'recettes');
+            const recipeRef = collection(db, 'recipes');
   
-    getDocs(recetteRef).then((querySnapshot) => {
-      const recettesList = [];
+    getDocs(recipeRef).then((querySnapshot) => {
+      const recipeList = [];
       querySnapshot.forEach((doc) => {
-        recettesList.push({
+        recipeList.push({
           id: doc.id,
           ...doc.data(),
         });
       });
-      setRecettes(recettesList);
+      setRecipes(recipeList);
     })
   }, []);
-  
-  console.log(recettes);
     return(
-        <div className='cards'>
-            {recettes.map((recette) => (
-                <div className="card" key={recette.id}>
-                    <h2>{recette.title}</h2>
-        </div>
+      <div className='cards'>
+        {recipes.map((recipe) => (
+            <div className="card" key={recipe.id}>
+             <img class="card-img-top" src={recipe.image} alt="image de la recette"/>
+              <div class="card-body">
+                <p class="card-user">{recipe.userId}</p>
+                <Link to="/Recipe"><h5 class="card-title">{recipe.title}</h5></Link>
+              </div>
+            </div>
             ))}
         </div>
         )

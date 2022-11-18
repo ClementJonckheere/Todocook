@@ -1,0 +1,25 @@
+.formulaire {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.formulaire_ajout {
+    display: flex;
+    justify-content: center;
+}
+
+.titre_ajout {
+    margin-bottom: 30px;
+}
+
+.btn_formulaire {
+    color:white;
+    background-color: #EC8823;
+    border-color: #EC8823;
+}
+
+.btn_formulaire:hover {
+    color:#EC8823;
+    background-color: white;
+    border-color:#EC8823;
+}

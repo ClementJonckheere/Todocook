@@ -70,7 +70,7 @@ const LoginScreen = () => {
               onChange={formik.handleChange}
             />
             </div>
-        <button type="submit">Se connecter</button>
+        <button className="btn-login btn btn-primary" type="submit">Se connecter</button>
       </form>
     </div>
   );

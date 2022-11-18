@@ -1,6 +1,17 @@
 const Dessert = () => {
     return (
-        <h1>Bonjour</h1>
+        <main className="main_dashboard">
+        <div className='container-fluid'></div>
+            <h1>Dessert</h1>
+
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap"/>
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>  
+            </div>
+            
+    </main>
     )
 
 };

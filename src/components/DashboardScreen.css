@@ -3,3 +3,13 @@
     padding-top: 2rem;
     
 }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.spanTodocook {
+    color: #EC8823;
+}

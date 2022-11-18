@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import Searchbar from "../components/Searchbar";
 import "../components/layout.css";
 import "../components/Searchbar";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
 
@@ -14,23 +15,23 @@ const Layout = () => {
         <header>
         <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" id="logo" href="/">Todocook</a>
+    <Link class="navbar-brand" id="logo" to="/">Todocook</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Entrée">Entrée</a>
+          <Link class="nav-link active" aria-current="page" to="/Entrée">Entrée</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Plats">Plats</a>
+          <Link class="nav-link" to="/Plats">Plats</Link>
         </li>
         <li class="nav-item">
-          <a  class="nav-link" href="/Dessert">Dessert</a>
+          <Link  class="nav-link" to="/Dessert">Dessert</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Ajoutrecette">Ajouter des recettes</a>
+          <Link class="nav-link" to="/Ajout-des-recettes">Ajouter des recettes</Link>
         </li>
       </ul>
       {authContext.isLogged && (
@@ -47,7 +48,7 @@ const Layout = () => {
            <main>
                 <Outlet />
             </main>
-            <footer>
+            <footer className="footer">
                 <span className="copyright">&copy; Réalisé par Clément Jonckheere en 2022</span>
             </footer>
             </> 

@@ -1,15 +1,11 @@
-/* form {
-    border: 3px solid #f1f1f1;
-    width: 100vw;
-    height: 50vh;
+.btn-login {
+    color:white;
+    background-color: #EC8823 !important;
+    border-color: #EC8823 !important;
 }
 
-.label {
-    display: flex;
-    justify-content: center;
+.btn_login:hover {
+    color:#EC8823 !important;
+    background-color: white !important;
+    border-color:#EC8823 !important;
 }
-
-.input {
-    display: flex;
-    justify-content: center;
-} */
