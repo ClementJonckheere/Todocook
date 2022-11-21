@@ -1,0 +1,27 @@
+.main-recipe {
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+/* .titre-recipe {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.time-ingredient, .title_ingredients {
+    display: flex;
+    justify-content: center;
+}
+
+.ingredients {
+    width: 100%;
+    display: block;
+}
+
+.allingredients {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */

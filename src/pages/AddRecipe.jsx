@@ -90,7 +90,8 @@ const onSubmit = (values) => {
             category:'',
             ingredients:'',
             recipe:'',
-            image:''
+            image:'',
+            preparation:''
         },
         onSubmit,
 })
@@ -115,6 +116,10 @@ console.log(auth.currentUser.uid);
                 <option value="2">Plats</option>
                 <option value="3">Dessert</option>
             </select>
+            </div>
+            <div className="mb-3 justify-content-center">
+                <label htmlFor="preparation" className="form-label">Temps de préparation</label>
+                <input type="text" className="form-control" id="preparation" aria-describedby="preparation" name="preparation" onChange={formik.handleChange} value={formik.values.preparation} />
             </div>
 
             <div class="mb-3">

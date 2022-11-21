@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         element: <AddRecipe />,
       },
       {
-        path: 'Recipe',
+        path: `/Recipe/:id`,
         element: <Recipe />,
       }
     ],

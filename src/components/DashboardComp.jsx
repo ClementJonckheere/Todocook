@@ -27,7 +27,7 @@ const DashboardComp = () => {
              <img class="card-img-top" src={recipe.image} alt="image de la recette"/>
               <div class="card-body">
                 <p class="card-user">{recipe.userId}</p>
-                <Link to="/Recipe"><h5 class="card-title">{recipe.title}</h5></Link>
+                <Link to={`/Recipe/${recipe.id}`}><h5 class="card-title">{recipe.title}</h5></Link>
               </div>
             </div>
             ))}
