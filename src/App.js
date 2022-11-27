@@ -19,6 +19,7 @@ import Plats from './pages/Plats';
 import Entrée from './pages/Entrée';
 import AddRecipe from './pages/AddRecipe';
 import Recipe from './components/Recipe';
+import signUp from './pages/signUp';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <LoginScreen />,
+      },
+      {
+        path: 'signup',
+        element: <signUp />
       },
       {
         path: 'dessert',

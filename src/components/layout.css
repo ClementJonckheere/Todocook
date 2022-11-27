@@ -37,13 +37,30 @@ ul {
     list-style-type: none;
 }
 
-li {
-    font-size: 20px;
+@media screen and (max-width: 900px) {
+    ul {
+       width: 100%;
+    }
+
+    ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
 }
 
-li:hover {
-    color: #EC8823;
-} */
+li {
+    font-size: 25px;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: #EC8823 !important;
+}
+
+
 
 .buttondeco {
     background-color: #EC8823;
@@ -51,10 +68,19 @@ li:hover {
     border-color: #EC8823;
 }
 
+.navbar-toggler {
+    background-color: #EC8823 !important;
+}
+
+
 /*** FOOTER ***/
 
 .footer {
+    margin-top: auto ;
     border-top: 1px outset black;
+    width:100%;
+    height:50px; 
+    bottom: 0;
 }
 .copyright { 
     border-top: 1px outset black;

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { useFormik } from 'formik';
-
+import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../config/firebaseConfig';
 import { AuthContext } from '../context/AuthContext';
@@ -71,6 +71,7 @@ const LoginScreen = () => {
             />
             </div>
         <button className="btn-login btn btn-primary" type="submit">Se connecter</button>
+        <Link to={`/signup`}><p class="card-title">S'inscrire</p></Link>
       </form>
     </div>
   );

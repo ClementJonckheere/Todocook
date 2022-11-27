@@ -5,24 +5,20 @@ import '../components/DashboardScreen.css';
 const DashboardScreen = () => {
     
     return (
-        <main className='main_dashboard'>
-            <div className='container-fluid'>
                 <div className="contentAccueil">
                     <div className="presentationAccueil">
                         <p className='text'>Avec <span className='spanTodocook'>Todocook</span>, plus de cuisine dans ta vie !</p>
                         <p className='text'>Ne manquer plus d'inspiration, sachez quoi manger. Découvrez toutes nos recettes pour les entrées, plats
                             et desserts.</p>
                     </div>
-                    
-                <div className='container-fluid'>
-                    <div className='recettes_incontournable'>
+                    <div className='recettes_incontournable mt-5'>
                     <h1>Recettes incontournables</h1>
                     </div>  
+
                         <DashboardComp />   
+
+
                 </div>
-                </div>
-            </div>
-        </main>
     )
 }
 export default DashboardScreen;

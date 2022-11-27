@@ -21,16 +21,20 @@ const DashboardComp = () => {
     })
   }, []);
     return(
-      <div className='cards'>
-        {recipes.map((recipe) => (
-            <div className="card" key={recipe.id}>
-             <img class="card-img-top" src={recipe.image} alt="image de la recette"/>
-              <div class="card-body">
-                <p class="card-user">{recipe.userId}</p>
-                <Link to={`/Recipe/${recipe.id}`}><h5 class="card-title">{recipe.title}</h5></Link>
+      <div className='container mt-4'>
+      <div className='row g-3'>
+          {recipes.map((recipe) => (
+            <div className='col-12 col-md-6 col-lg-4'>
+              <div className="card" key={recipe.id}>
+              <img class="card-img-top" src={recipe.image} alt="image de la recette"/>
+                <div class="card-body">
+                  <p class="card-user">{recipe.userId}</p>
+                  <Link className="links" to={`/Recipe/${recipe.id}`}><h5 class="card-title">{recipe.title}</h5></Link>
+                </div>
               </div>
-            </div>
-            ))}
+              </div>
+              ))}
+          </div>
         </div>
         )
 }

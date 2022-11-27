@@ -75,7 +75,7 @@ const onSubmit = (values) => {
             addDoc(recipeColRef, {
                 ...values,
                 image:url,
-                userId: auth.currentUser.email
+                // userId: auth.currentUser.email
             }).then( () => {
                     window.alert("enrigistrement effectué")
             })
@@ -95,10 +95,10 @@ const onSubmit = (values) => {
         },
         onSubmit,
 })
-console.log(auth.currentUser.uid);
+// console.log(auth.currentUser.uid);
 
     return (
-        <main className='main_ajout'>
+        <div className='main_ajout'>
             <div className="text_ajout">
                 <h1 className='titre_ajout'>Ajouter des recettes</h1>
             </div>
@@ -152,7 +152,7 @@ console.log(auth.currentUser.uid);
         </section>
         </form>
         </div>
-        </main>
+        </div>
     )
 
 };
