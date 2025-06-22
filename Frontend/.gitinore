@@ -1,0 +1,25 @@
+# === PYTHON / FASTAPI ===
+*.pyc
+__pycache__/
+.vscode/
+.venv/
+.env
+test.db
+*.sqlite3
+
+# Alembic
+alembic/versions/
+
+# === NODE / REACT ===
+node_modules/
+build/
+dist/
+.cache/
+*.log
+*.lock
+
+# === OS / DIVERS ===
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
